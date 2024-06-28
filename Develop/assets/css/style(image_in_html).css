@@ -131,7 +131,7 @@ main {
   justify-content: space-between;
 }
 
-.page-section > h2 {
+.page-section>h2 {
   flex: 0 0 20%;
   text-align: right;
   padding-right: 15px;
@@ -140,7 +140,7 @@ main {
   line-height: 1.1;
 }
 
-.page-section > div {
+.page-section>div {
   flex: 0 0 77%;
 }
 
@@ -170,12 +170,13 @@ main {
   background-size: 150%;
   transition: all 0.5s;
   font-size: 0.9rem;
+  position: relative;
 }
 
 /* feature first portfolio item */
 .flex-item:first-child {
-    min-height: 400px;
-    flex-basis: 100%;
+  min-height: 400px;
+  flex-basis: 100%;
 }
 
 .flex-item:hover {
@@ -185,6 +186,7 @@ main {
 .flex-item div {
   background-color: var(--secondary);
   padding: 8px 10px;
+  position: absolute;
 }
 
 .flex-item h3 {
@@ -221,9 +223,38 @@ main {
 
 /* portfolio project images */
 /* TODO: Add portfolio project images here*/
+.picture {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
 
 /* media queries */
 
 /* TODO: add media query for a max-width of 980px */
+@media screen and (width <=980px) {
+  .flex-item:first-child {
+    min-height: 100px;
+    flex-basis: calc(50% - 1em);
+  }
+}
 
 /* TODO: add media query for a max-width of 768px */
+@media screen and (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+    min-height: 100px;
+    flex-wrap: nowrap;
+  }
+
+  .flex-item {
+    min-height: 100px;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .flex-item:first-child {
+    min-height: 100px;
+    flex-basis: 100%;
+  }
+}
