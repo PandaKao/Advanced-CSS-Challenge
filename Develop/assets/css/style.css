@@ -223,10 +223,29 @@ main {
 
 /* portfolio project images */
 /* TODO: Add portfolio project images here*/
-.picture {
-  height: 100%;
-  width: 100%;
-  object-fit: fill;
+.flex-item.horiseon {
+  background-image: url("../Horiseon_Website_Refactor.PNG");
+  background-size: 100% 100%;
+}
+
+.flex-item.study_guide {
+  background-image: url("../Prework_Study_Guide.PNG");
+  background-size: 100% 100%;
+}
+
+.flex-item.CSS_study_guide {
+  background-image: url("../01-app-desktop.png");
+  background-size: 100% 100%;
+}
+
+.flex-item.placeholder2 {
+  background-image: url("https://placedog.net/400/240?random");
+  background-size: 100% 100%;
+}
+
+.flex-item.placeholder3 {
+  background-image: url("https://placedog.net/400/241?random");
+  background-size: 100% 100%;
 }
 
 /* media queries */
@@ -236,6 +255,10 @@ main {
   .flex-item:first-child {
     min-height: 100px;
     flex-basis: calc(50% - 1em);
+  }
+
+  .flex-item:last-child {
+    flex-basis: 100%;
   }
 }
 
