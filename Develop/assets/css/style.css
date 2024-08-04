@@ -226,26 +226,26 @@ main {
 .flex-item.horiseon {
   background-image: url("../Horiseon_Website_Refactor.PNG");
   background-size: 100% 100%;
+  object-fit: fill;
 }
 
 .flex-item.study_guide {
   background-image: url("../Prework_Study_Guide.PNG");
-  background-size: 100% 100%;
+  background-size: 100%;
 }
 
 .flex-item.CSS_study_guide {
   background-image: url("../01-app-desktop.png");
-  background-size: 100% 100%;
+  background-size: 100%;
 }
 
-.flex-item.placeholder2 {
-  background-image: url("https://placedog.net/400/240?random");
-  background-size: 100% 100%;
+.flex-item.picturific {
+  background-image: url("../Picturific-index-home.png");
 }
 
 .flex-item.placeholder3 {
   background-image: url("https://placedog.net/400/241?random");
-  background-size: 100% 100%;
+  background-size: 100%
 }
 
 /* media queries */
